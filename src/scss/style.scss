@@ -30,11 +30,12 @@ body {
     p {
         font-weight: 400;
         font-size: 0.875rem;
+        line-height: 1.3125;
         margin: 0.3125rem 1.875rem 0 0.75rem;
     }
 }
 
-main {
+section {
     padding: 0;
     margin: 3rem auto 0;
     display: flex;
@@ -68,6 +69,7 @@ main {
         font-size: 0.875rem;
         margin: 0.5rem 0;
     }
+
     &:nth-of-type(even) {
         margin-top: 4rem;
     }
@@ -80,11 +82,114 @@ footer {
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
-    margin: 5rem 0 0.1rem;
+    margin: 5rem 0 0.7rem;
+
     p {
         font-weight: 400;
     }
+
     span {
         font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    //     #page-container {
+    //         margin: 6.875rem 18rem;
+    //     }
+
+    //     #header {
+    //         display: flex;
+    //         justify-content: space-around;
+
+    //         h1,
+    //         div {
+    //             margin: 0;
+    //         }
+
+    //         div {
+    //             width: 27.4375rem;
+    //         }
+
+    //         #head2 p {
+    //             font-size: 1.125rem;
+    //             line-height: 1.6875;
+    //         }
+    //     }
+
+    //     main {
+    //         row-gap: 4.1875rem;
+    //     }
+
+    //     .profile img {
+    //         width: 14.875rem;
+    //         height: 21.3125rem;
+    //     }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 60rem;
+        margin-top: 5.875rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 27.4375rem;
+        }
+
+        #head1 {
+            margin: 0;
+        }
+
+        #head2 {
+
+            h2 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.125rem;
+                line-height: 1.6875;
+            }
+        }
+    }
+
+    section {
+        margin-top: 6rem;
+        justify-content: space-between;
+    }
+
+    .profile {
+        width: 16.5rem;
+        margin-bottom: 2rem;
+
+        img {
+            width: 14.875rem;
+            height: 21.3125rem;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+        }
+
+        h4 {
+            font-size: 0.75rem;
+        }
+
+        &:nth-of-type(even) {
+            margin-top: 0rem;
+        }
+
+        &:nth-child(3n+2) {
+            margin-top: 5.875rem;
+        }
     }
 }
